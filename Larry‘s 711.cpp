@@ -17,4 +17,13 @@ struct Sale{int day,id;std::string date,time;std::vector <SaleLine> lines;long l
 //3.
 std::map<std::string, Item> items;//对应查找商品
 std::map<std::string,int> cart;//购物车
+int currentDay = 1;
+int nextid = 1;
+bool admin = false;//默认非管理员
+//4.money函数
+std::string money(long long cents) {
+    std::ostringstream out;
+    out << cents / 100 << '.' << std::setfill('0') << std::setw(2) << cents % 100;
+    return out.str();
+}
 
