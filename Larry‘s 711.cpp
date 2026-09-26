@@ -18,3 +18,4 @@ struct Sale{int day,id;std::string date,time;std::vector <SaleLine> lines;long l
 std::map<std::string, Item> items;//对应查找商品
 std::map<std::string,int> cart;//购物车
 
+学不下去c++了遂及时止损
